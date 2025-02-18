@@ -12,6 +12,4 @@ public class WebclientConfig {
         return builder.baseUrl("http://localhost:8082/api").build();
     }
 
-
-
 }

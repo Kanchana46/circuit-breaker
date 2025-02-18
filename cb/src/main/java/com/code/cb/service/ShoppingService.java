@@ -30,7 +30,7 @@ public class ShoppingService {
                 .block();
     }
 
-    public Product fallback(int id, Exception e) {
+    private Product fallback(int id, Exception e) {
         LOGGER.log(Level.SEVERE, e.getMessage());
         return new Product();
     }
